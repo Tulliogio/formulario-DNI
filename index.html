@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Giovanni</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="dato">
+        <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <label>Nombre:</label>
+                <input type="text" name="name_control" placeholder="Escribe tu nombre" required autofocus />
+                <br>
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos" placeholder="Escribe tu appellido" required autofocus>
+                <br>
+                <label> DNI:</label>
+                <input name="DRS" id="dni" onkeypress="return es(event)" oninput="maxLengthCheck(this)"
+                    onkeyup="calculo()" type="number" placeholder="DNI" min="11111111" max="99999999" />
+
+                <strong id="letra"></strong>
+                <br>
+                <label>Teléfono: </label>
+                <input type="text" name="telefono" placeholder="Ej. +34668899999" required>
+                <br>
+                <label>Dirección:</label>
+                <input type="text" name="direccion" placeholder="Escribe tu direccion" required autofocus>
+                <br>
+                <label>Población:</label>
+                <input type="text" name="poblacion">
+                <br>
+                <label>Fecha Nacimiento:</label><input type="date" name="date_control" />
+                <div id="botones">
+                    <p>
+                        <input id="borrar" type="reset" value="Borrar">
+                        <input id="enviar" type="submit" value="Enviar">
+                    </p>
+                </div>
+        </form>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

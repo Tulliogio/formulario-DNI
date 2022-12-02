@@ -1,0 +1,47 @@
+body
+{
+    display:inline-block;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: green;
+}
+
+form{
+	width:380px;
+    padding:10px;
+    line-height: 30px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+input{
+    width: 160px;
+}
+#botones {
+    display: block;
+    height: 30px;
+}
+#botones input {
+    width: 70px;
+}
+
+#borrar {
+    float: left;
+    margin-left: 2%;
+}
+
+#enviar {
+    float: right;
+    margin-right: 2%;
+}
+
+#letra {
+    width: 25px;
+    float: right;
+}
